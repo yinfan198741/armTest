@@ -12,7 +12,7 @@
 long addThree(long a,long b, long c)
 {
 
-	long baseThree = 0x4234;
+	long baseThree = 0x3333;
 	long tow = addTow(a, b);
 	return baseThree + tow;
 }

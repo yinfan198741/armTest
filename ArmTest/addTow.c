@@ -10,7 +10,7 @@
 
 long addTow(long a,long b)
 {
-	long base = 0x5234;
+	long base = 0x2222;
 	long baseP = &base;
 	return base + a + b;
 }

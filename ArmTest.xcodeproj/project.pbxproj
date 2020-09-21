@@ -18,6 +18,7 @@
 		A7307C9B2517512E001889FD /* ArmTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A7307C9A2517512E001889FD /* ArmTestUITests.m */; };
 		A7307CAD2517537F001889FD /* addTow.c in Sources */ = {isa = PBXBuildFile; fileRef = A7307CAC2517537F001889FD /* addTow.c */; };
 		A7307CB325175393001889FD /* addThree.c in Sources */ = {isa = PBXBuildFile; fileRef = A7307CB225175393001889FD /* addThree.c */; };
+		A7307CB92518EF36001889FD /* addFour.c in Sources */ = {isa = PBXBuildFile; fileRef = A7307CB82518EF36001889FD /* addFour.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		A7307CAC2517537F001889FD /* addTow.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = addTow.c; sourceTree = "<group>"; };
 		A7307CB125175393001889FD /* addThree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = addThree.h; sourceTree = "<group>"; };
 		A7307CB225175393001889FD /* addThree.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = addThree.c; sourceTree = "<group>"; };
+		A7307CB72518EF36001889FD /* addFour.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = addFour.h; sourceTree = "<group>"; };
+		A7307CB82518EF36001889FD /* addFour.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = addFour.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +128,8 @@
 				A7307CAC2517537F001889FD /* addTow.c */,
 				A7307CB125175393001889FD /* addThree.h */,
 				A7307CB225175393001889FD /* addThree.c */,
+				A7307CB72518EF36001889FD /* addFour.h */,
+				A7307CB82518EF36001889FD /* addFour.c */,
 			);
 			path = ArmTest;
 			sourceTree = "<group>";
@@ -276,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7307CB92518EF36001889FD /* addFour.c in Sources */,
 				A7307C7B2517512C001889FD /* ViewController.m in Sources */,
 				A7307C752517512C001889FD /* AppDelegate.m in Sources */,
 				A7307CB325175393001889FD /* addThree.c in Sources */,

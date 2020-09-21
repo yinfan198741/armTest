@@ -8,6 +8,7 @@
 #import "ViewController.h"
 #include "addTow.h"
 #include "addThree.h"
+#include "addFour.h"
 
 @interface ViewController ()
 
@@ -33,23 +34,39 @@
 	[b3 addTarget:self action:@selector(onclickThree) forControlEvents:UIControlEventTouchUpInside];
 	[self.view addSubview:b3];
 	
+	
+	UIButton* b4 = [[UIButton alloc] initWithFrame:CGRectMake(10, 500, 100, 100)];
+	b4.backgroundColor = [UIColor redColor];
+	[b4 setTitle:@"three" forState:UIControlStateNormal];
+	[b4 addTarget:self action:@selector(onclickFour) forControlEvents:UIControlEventTouchUpInside];
+	[self.view addSubview:b4];
 }
 - (void)onclickTow
 {
-	int a = 0x1111;
-	int b = 0x2222;
-	int tow = addTow(a, b);
-	NSLog(@"tow = %d",tow);
+	long a = 0x1111;
+	long b = 0x2222;
+	long tow = addTow(a, b);
+	NSLog(@"tow = %ld",tow);
 }
 
 
 - (void)onclickThree
 {
-	int a = 0x1234;
-	int b = 0x2234;
-	int c = 0x3234;
-	int three = addThree(a, b, c);
-	NSLog(@"three = %d",three);
+	long a = 0x1234;
+	long b = 0x2334;
+	long c = 0x3234;
+	long three = addThree(a, b, c);
+	NSLog(@"three = %ld",three);
+}
+
+- (void)onclickFour
+{
+	long a = 0x1234;
+	long b = 0x2334;
+	long c = 0x3234;
+	long d = 0x4234;
+	long three = addFour(a, b, c,d);
+	NSLog(@"three = %ld",three);
 }
 
 @end
