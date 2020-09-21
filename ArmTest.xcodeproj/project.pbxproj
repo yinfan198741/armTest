@@ -16,6 +16,8 @@
 		A7307C862517512D001889FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A7307C852517512D001889FD /* main.m */; };
 		A7307C902517512E001889FD /* ArmTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A7307C8F2517512E001889FD /* ArmTestTests.m */; };
 		A7307C9B2517512E001889FD /* ArmTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A7307C9A2517512E001889FD /* ArmTestUITests.m */; };
+		A7307CAD2517537F001889FD /* addTow.c in Sources */ = {isa = PBXBuildFile; fileRef = A7307CAC2517537F001889FD /* addTow.c */; };
+		A7307CB325175393001889FD /* addThree.c in Sources */ = {isa = PBXBuildFile; fileRef = A7307CB225175393001889FD /* addThree.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,10 @@
 		A7307C962517512E001889FD /* ArmTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArmTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7307C9A2517512E001889FD /* ArmTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArmTestUITests.m; sourceTree = "<group>"; };
 		A7307C9C2517512E001889FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7307CAB2517537F001889FD /* addTow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = addTow.h; sourceTree = "<group>"; };
+		A7307CAC2517537F001889FD /* addTow.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = addTow.c; sourceTree = "<group>"; };
+		A7307CB125175393001889FD /* addThree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = addThree.h; sourceTree = "<group>"; };
+		A7307CB225175393001889FD /* addThree.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = addThree.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,10 @@
 				A7307C812517512D001889FD /* LaunchScreen.storyboard */,
 				A7307C842517512D001889FD /* Info.plist */,
 				A7307C852517512D001889FD /* main.m */,
+				A7307CAB2517537F001889FD /* addTow.h */,
+				A7307CAC2517537F001889FD /* addTow.c */,
+				A7307CB125175393001889FD /* addThree.h */,
+				A7307CB225175393001889FD /* addThree.c */,
 			);
 			path = ArmTest;
 			sourceTree = "<group>";
@@ -268,7 +278,9 @@
 			files = (
 				A7307C7B2517512C001889FD /* ViewController.m in Sources */,
 				A7307C752517512C001889FD /* AppDelegate.m in Sources */,
+				A7307CB325175393001889FD /* addThree.c in Sources */,
 				A7307C862517512D001889FD /* main.m in Sources */,
+				A7307CAD2517537F001889FD /* addTow.c in Sources */,
 				A7307C782517512C001889FD /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
