@@ -9,6 +9,8 @@
 #include "addTow.h"
 #include "addThree.h"
 #include "addFour.h"
+#include "BigStruct.h"
+#include "ArgsParamter.h"
 
 @interface ViewController ()
 
@@ -37,9 +39,32 @@
 	
 	UIButton* b4 = [[UIButton alloc] initWithFrame:CGRectMake(10, 500, 100, 100)];
 	b4.backgroundColor = [UIColor redColor];
-	[b4 setTitle:@"three" forState:UIControlStateNormal];
+	[b4 setTitle:@"Four" forState:UIControlStateNormal];
 	[b4 addTarget:self action:@selector(onclickFour) forControlEvents:UIControlEventTouchUpInside];
 	[self.view addSubview:b4];
+	
+	
+	UIButton* b5 = [[UIButton alloc] initWithFrame:CGRectMake(200, 100, 100, 100)];
+	b5.backgroundColor = [UIColor redColor];
+	[b5 setTitle:@"Five" forState:UIControlStateNormal];
+	[b5 addTarget:self action:@selector(onclickFive) forControlEvents:UIControlEventTouchUpInside];
+	[self.view addSubview:b5];
+	
+	
+	UIButton* b6 = [[UIButton alloc] initWithFrame:CGRectMake(200, 300, 100, 100)];
+	b6.backgroundColor = [UIColor redColor];
+	[b6 setTitle:@"Six" forState:UIControlStateNormal];
+	[b6 addTarget:self action:@selector(onclickSix) forControlEvents:UIControlEventTouchUpInside];
+	[self.view addSubview:b6];
+	
+	
+	UIButton* b7 = [[UIButton alloc] initWithFrame:CGRectMake(200, 500, 100, 100)];
+	b7.backgroundColor = [UIColor redColor];
+	[b7 setTitle:@"Seven" forState:UIControlStateNormal];
+	[b7 addTarget:self action:@selector(onclickSeven) forControlEvents:UIControlEventTouchUpInside];
+	[self.view addSubview:b7];
+	
+	
 }
 - (void)onclickTow
 {
@@ -67,6 +92,24 @@
 	long d = 0x4234;
 	long three = addFour(a, b, c,d);
 	NSLog(@"three = %ld",three);
+}
+
+
+- (void)onclickFive
+{
+	bigs s = getBigs();
+	NSLog(@"s.a19 = %lld",s.a19);
+}
+
+
+- (void)onclickSix
+{
+	
+}
+
+- (void)onclickSeven
+{
+	
 }
 
 @end

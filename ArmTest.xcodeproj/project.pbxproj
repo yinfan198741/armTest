@@ -19,6 +19,8 @@
 		A7307CAD2517537F001889FD /* addTow.c in Sources */ = {isa = PBXBuildFile; fileRef = A7307CAC2517537F001889FD /* addTow.c */; };
 		A7307CB325175393001889FD /* addThree.c in Sources */ = {isa = PBXBuildFile; fileRef = A7307CB225175393001889FD /* addThree.c */; };
 		A7307CB92518EF36001889FD /* addFour.c in Sources */ = {isa = PBXBuildFile; fileRef = A7307CB82518EF36001889FD /* addFour.c */; };
+		A7307CBF2518F46E001889FD /* BigStruct.c in Sources */ = {isa = PBXBuildFile; fileRef = A7307CBE2518F46E001889FD /* BigStruct.c */; };
+		A7307CC8251972FA001889FD /* ArgsParamter.c in Sources */ = {isa = PBXBuildFile; fileRef = A7307CC7251972FA001889FD /* ArgsParamter.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,10 @@
 		A7307CB225175393001889FD /* addThree.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = addThree.c; sourceTree = "<group>"; };
 		A7307CB72518EF36001889FD /* addFour.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = addFour.h; sourceTree = "<group>"; };
 		A7307CB82518EF36001889FD /* addFour.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = addFour.c; sourceTree = "<group>"; };
+		A7307CBD2518F46E001889FD /* BigStruct.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BigStruct.h; sourceTree = "<group>"; };
+		A7307CBE2518F46E001889FD /* BigStruct.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = BigStruct.c; sourceTree = "<group>"; };
+		A7307CC6251972FA001889FD /* ArgsParamter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArgsParamter.h; sourceTree = "<group>"; };
+		A7307CC7251972FA001889FD /* ArgsParamter.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ArgsParamter.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +119,8 @@
 		A7307C722517512C001889FD /* ArmTest */ = {
 			isa = PBXGroup;
 			children = (
+				A7307CBD2518F46E001889FD /* BigStruct.h */,
+				A7307CBE2518F46E001889FD /* BigStruct.c */,
 				A7307C732517512C001889FD /* AppDelegate.h */,
 				A7307C742517512C001889FD /* AppDelegate.m */,
 				A7307C762517512C001889FD /* SceneDelegate.h */,
@@ -130,6 +138,8 @@
 				A7307CB225175393001889FD /* addThree.c */,
 				A7307CB72518EF36001889FD /* addFour.h */,
 				A7307CB82518EF36001889FD /* addFour.c */,
+				A7307CC6251972FA001889FD /* ArgsParamter.h */,
+				A7307CC7251972FA001889FD /* ArgsParamter.c */,
 			);
 			path = ArmTest;
 			sourceTree = "<group>";
@@ -284,9 +294,11 @@
 				A7307CB92518EF36001889FD /* addFour.c in Sources */,
 				A7307C7B2517512C001889FD /* ViewController.m in Sources */,
 				A7307C752517512C001889FD /* AppDelegate.m in Sources */,
+				A7307CBF2518F46E001889FD /* BigStruct.c in Sources */,
 				A7307CB325175393001889FD /* addThree.c in Sources */,
 				A7307C862517512D001889FD /* main.m in Sources */,
 				A7307CAD2517537F001889FD /* addTow.c in Sources */,
+				A7307CC8251972FA001889FD /* ArgsParamter.c in Sources */,
 				A7307C782517512C001889FD /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
