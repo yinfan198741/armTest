@@ -11,6 +11,7 @@
 #include "addFour.h"
 #include "BigStruct.h"
 #include "ArgsParamter.h"
+#import "ArgsParamterOc.h"
 
 @interface ViewController ()
 
@@ -102,20 +103,22 @@
 }
 
 
-static int a = 0x1234;
-static int b = 0x2334;
-static int c = 0x3234;
-static int d = 0x4234;
+//static int a = 1;
+//static int b = 2;
+//static int c = 3;
+//static int d = 4;
 
 ///BP 在那里
 - (void)onclickSix
 {
-	argsTest(a,b);
+//	argsTest(1,2);
+	[ArgsParamterOc sum: 1 , 2, nil];
 }
 
 - (void)onclickSeven
 {
-	argsTest(a,b,c,d);
+//	argsTest(1,2,3,4,NULL);
+	[ArgsParamterOc sum: 1 , 2, 3, 4, nil];
 }
 
 @end
