@@ -11,6 +11,6 @@
 #include <stdio.h>
 
 
-void argsTest(long n, ...);
+void argsTest(int n, ...);
 
 #endif /* ArgsParamter_h */

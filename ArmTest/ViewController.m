@@ -102,10 +102,10 @@
 }
 
 
-static long a = 0x1234;
-static long b = 0x2334;
-static long c = 0x3234;
-static long d = 0x4234;
+static int a = 0x1234;
+static int b = 0x2334;
+static int c = 0x3234;
+static int d = 0x4234;
 
 ///BP 在那里
 - (void)onclickSix

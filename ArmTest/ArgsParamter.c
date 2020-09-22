@@ -9,13 +9,13 @@
 #include <stdarg.h>
 #include <stdio.h>
 
-void argsTest(long n, ...)
+void argsTest(int n, ...)
 {
 	va_list ap;
 	va_start(ap,n);
 	long temp = 0;
 	for (int i = 0 ; i < n; i++) {
-		temp = va_arg(ap, long);
+		temp = va_arg(ap, int);
 	}
 	va_end(ap);
 }
