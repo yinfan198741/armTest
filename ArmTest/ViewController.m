@@ -102,14 +102,20 @@
 }
 
 
+static long a = 0x1234;
+static long b = 0x2334;
+static long c = 0x3234;
+static long d = 0x4234;
+
+///BP 在那里
 - (void)onclickSix
 {
-	
+	argsTest(a,b);
 }
 
 - (void)onclickSeven
 {
-	
+	argsTest(a,b,c,d);
 }
 
 @end
