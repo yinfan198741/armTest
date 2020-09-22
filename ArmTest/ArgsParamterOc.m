@@ -11,16 +11,21 @@
 
 
 
-+ (int)sum:(int)num, ...
++ (long)sum:(long)num, ...
 {
-	int result = num;
-	int objNum;
+	long result = num;
+//	long objNum;
 	
 	va_list arg_list;
 	va_start(arg_list, num);
-	while ((objNum = va_arg(arg_list, int))) {
-		result += objNum;
+	
+	for (int i = 0 ; i < num; i++) {
+		result += va_arg(arg_list, long);
 	}
+	
+//	while ((objNum = va_arg(arg_list, long))) {
+//		result += objNum;
+//	}
 	va_end(arg_list);
 	return result;
 }
