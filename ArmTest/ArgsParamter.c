@@ -13,7 +13,7 @@ void argsTest(int n, ...)
 {
 	va_list ap;
 	va_start(ap,n);
-	long temp = 0;
+	int temp = 0;
 	for (int i = 0 ; i < n; i++) {
 		temp = va_arg(ap, int);
 	}
