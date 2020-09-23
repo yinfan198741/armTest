@@ -72,6 +72,7 @@
 		A7307CC7251972FA001889FD /* ArgsParamter.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ArgsParamter.c; sourceTree = "<group>"; };
 		A7307CD4251A4F08001889FD /* ArgsParamterOc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArgsParamterOc.h; sourceTree = "<group>"; };
 		A7307CD5251A4F08001889FD /* ArgsParamterOc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArgsParamterOc.m; sourceTree = "<group>"; };
+		A7307CDB251B9923001889FD /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +107,7 @@
 				A7307C8E2517512E001889FD /* ArmTestTests */,
 				A7307C992517512E001889FD /* ArmTestUITests */,
 				A7307C712517512C001889FD /* Products */,
+				A7307CDA251B9923001889FD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -165,6 +167,14 @@
 				A7307C9C2517512E001889FD /* Info.plist */,
 			);
 			path = ArmTestUITests;
+			sourceTree = "<group>";
+		};
+		A7307CDA251B9923001889FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7307CDB251B9923001889FD /* libc++.1.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -479,6 +489,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YKBWNE92X7;
+				HEADER_SEARCH_PATHS = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1";
 				INFOPLIST_FILE = ArmTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -497,6 +508,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YKBWNE92X7;
+				HEADER_SEARCH_PATHS = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1";
 				INFOPLIST_FILE = ArmTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

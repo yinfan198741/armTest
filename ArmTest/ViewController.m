@@ -108,17 +108,47 @@
 //static int c = 3;
 //static int d = 4;
 
+
+int sum(int argnum, ...)
+{
+	va_list arguments;
+	int i;
+	int sum = 0;
+
+	va_start(arguments, argnum); /* Needs last known character to calculate
+							   the address of the other parameters */
+	for(i = 0; i < argnum; ++i)
+		sum += va_arg(arguments, int); /* use next argument */
+
+	va_end(arguments);
+
+	return sum;
+}
 ///BP 在那里
 - (void)onclickSix
 {
-//	argsTest(1,2);
-	[ArgsParamterOc sum: 1 , 2, nil];
+//	sum(5, 5, 7, 1, 3, -2);
+//	int ret = argsTest(1,2);
+//	printf("%d",ret);
+//	int a = 0x1234;
+//	[ArgsParamterOc sum: @(1111) , @(2222), nil];
+	
+	int ret = sum(1,2,3);
+	printf("%d",ret);
 }
 
 - (void)onclickSeven
 {
-//	argsTest(1,2,3,4,NULL);
-	[ArgsParamterOc sum: 1 , 2, 3, 4, nil];
+//	int ret = argsTest(1,2,3,4);
+//	printf("%d",ret);
+//	int a = 0x1234;
+//	[ArgsParamterOc sum: @(1) , @2, @3, @4, nil];
+	
+	int ret = sum(1,2,3,4,5);
+	printf("%d",ret);
 }
+
+
+		
 
 @end

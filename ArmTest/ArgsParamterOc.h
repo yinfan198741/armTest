@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface ArgsParamterOc : NSObject
 
 
-+ (long)sum:(long)num, ...;
++ (long)sum:(NSNumber*)num, ...;
 
 
 @end

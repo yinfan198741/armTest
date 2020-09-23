@@ -11,6 +11,7 @@
 #include <stdio.h>
 
 
-void __cdecl argsTest(int n, ...);
+int argsTest(int arg, ...);
+
 
 #endif /* ArgsParamter_h */
