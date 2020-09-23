@@ -22,6 +22,7 @@
 		A7307CBF2518F46E001889FD /* BigStruct.c in Sources */ = {isa = PBXBuildFile; fileRef = A7307CBE2518F46E001889FD /* BigStruct.c */; };
 		A7307CC8251972FA001889FD /* ArgsParamter.c in Sources */ = {isa = PBXBuildFile; fileRef = A7307CC7251972FA001889FD /* ArgsParamter.c */; };
 		A7307CD6251A4F08001889FD /* ArgsParamterOc.m in Sources */ = {isa = PBXBuildFile; fileRef = A7307CD5251A4F08001889FD /* ArgsParamterOc.m */; };
+		A7307CEF251BA4B7001889FD /* TestAss.s in Sources */ = {isa = PBXBuildFile; fileRef = A7307CEE251BA4B7001889FD /* TestAss.s */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		A7307CD4251A4F08001889FD /* ArgsParamterOc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArgsParamterOc.h; sourceTree = "<group>"; };
 		A7307CD5251A4F08001889FD /* ArgsParamterOc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArgsParamterOc.m; sourceTree = "<group>"; };
 		A7307CDB251B9923001889FD /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
+		A7307CEE251BA4B7001889FD /* TestAss.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = TestAss.s; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 				A7307C772517512C001889FD /* SceneDelegate.m */,
 				A7307C792517512C001889FD /* ViewController.h */,
 				A7307C7A2517512C001889FD /* ViewController.m */,
+				A7307CEE251BA4B7001889FD /* TestAss.s */,
 				A7307C7C2517512C001889FD /* Main.storyboard */,
 				A7307C7F2517512D001889FD /* Assets.xcassets */,
 				A7307C812517512D001889FD /* LaunchScreen.storyboard */,
@@ -312,6 +315,7 @@
 				A7307CBF2518F46E001889FD /* BigStruct.c in Sources */,
 				A7307CB325175393001889FD /* addThree.c in Sources */,
 				A7307C862517512D001889FD /* main.m in Sources */,
+				A7307CEF251BA4B7001889FD /* TestAss.s in Sources */,
 				A7307CD6251A4F08001889FD /* ArgsParamterOc.m in Sources */,
 				A7307CAD2517537F001889FD /* addTow.c in Sources */,
 				A7307CC8251972FA001889FD /* ArgsParamter.c in Sources */,
