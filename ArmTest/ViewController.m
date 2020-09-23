@@ -17,6 +17,8 @@
 
 @end
 
+extern int TestAss(void);
+
 @implementation ViewController
 
 - (void)viewDidLoad {
@@ -24,6 +26,13 @@
 	// Do any additional setup after loading the view.
 	
 //	self.view.backgroundColor = UIColor.redColor;
+	
+	UIButton* b1 = [[UIButton alloc] initWithFrame:CGRectMake(10, 10, 50, 50)];
+	b1.backgroundColor = [UIColor redColor];
+	[b1 setTitle:@"one" forState:UIControlStateNormal];
+	[b1 addTarget:self action:@selector(onclickOne) forControlEvents:UIControlEventTouchUpInside];
+	[self.view addSubview:b1];
+	
 	UIButton* b2 = [[UIButton alloc] initWithFrame:CGRectMake(10, 100, 100, 100)];
 	b2.backgroundColor = [UIColor redColor];
 	[b2 setTitle:@"tow" forState:UIControlStateNormal];
@@ -67,6 +76,18 @@
 	
 	
 }
+
+- (void)onclickOne
+{
+//	long a = 0x1111;
+//	long b = 0x2222;
+//	long tow = addTow(a, b);
+//	NSLog(@"tow = %ld",tow);
+
+	int ret = TestAss();
+	NSLog(@"ret = %d",ret);
+}
+
 - (void)onclickTow
 {
 	long a = 0x1111;
