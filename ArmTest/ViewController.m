@@ -12,6 +12,9 @@
 #include "BigStruct.h"
 #include "ArgsParamter.h"
 #import "ArgsParamterOc.h"
+#import "HPerson.h"
+#import "THInterceptor.h"
+#import <objc/runtime.h>
 
 @interface ViewController ()
 
@@ -77,6 +80,17 @@ extern int TestAss(void);
 	
 }
 
+// C Format
+void myInterceptor()
+{
+	// bla bla bla
+	
+	NSLog(@"myInterceptor");
+}
+
+
+
+
 - (void)onclickOne
 {
 //	long a = 0x1111;
@@ -84,16 +98,60 @@ extern int TestAss(void);
 //	long tow = addTow(a, b);
 //	NSLog(@"tow = %ld",tow);
 
-	int ret = TestAss();
+//	myInterceptor();
+	int ret = 0;//TestAss();
 	NSLog(@"ret = %d",ret);
+	
+	
+//	THInterceptor *interceptor = [[THInterceptor alloc] initWithRedirectionFunction:(IMP)myInterceptor];
+//	Method m = class_getInstanceMethod([HPerson class], @selector(eat));
+//	IMP imp = method_getImplementation(m);
+//
+//	// Intercept the imp
+//	THInterceptorResult *result = [interceptor interceptFunction:imp];
+//
+//	// You can check the result.state to find whether the inteception is successfully carried out or not.
+//	if (result.state == THInterceptStateSuccess)
+//	{
+//		NSLog(@"THInterceptStateSuccess");
+//	}
+//	HPerson* hp = [[HPerson alloc] init];
+//	[hp eat];
+	
+	
+	THInterceptor *interceptor = [[THInterceptor alloc] initWithRedirectionFunction:(IMP)myInterceptor];
+
+	// Suppose you want to intercept the call of - [UIView initWithFrame:]
+	Method m = class_getInstanceMethod([UIView class], @selector(initWithFrame:));
+	IMP imp = method_getImplementation(m);
+
+	// Intercept the imp
+	THInterceptorResult *result = [interceptor interceptFunction:imp];
+
+	// You can check the result.state to find whether the inteception is successfully carried out or not.
+	if (result.state == THInterceptStateSuccess)
+	{
+		NSLog(@"THInterceptStateSuccess");
+	}
+	
 }
 
 - (void)onclickTow
 {
-	long a = 0x1111;
-	long b = 0x2222;
-	long tow = addTow(a, b);
-	NSLog(@"tow = %ld",tow);
+	
+//	HPerson* hp = [[HPerson alloc] init];
+//	[hp eat];
+	
+	UIView* v = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+	NSLog(@"v = %@",v);
+	
+	return;
+//
+//
+//	long a = 0x1111;
+//	long b = 0x2222;
+//	long tow = addTow(a, b);
+//	NSLog(@"tow = %ld",tow);
 }
 
 

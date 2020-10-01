@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A72889F02525DBBC002413A4 /* THInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = A72889E02525DBBC002413A4 /* THInterceptor.m */; };
+		A72889F12525DBBC002413A4 /* THPageDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = A72889E12525DBBC002413A4 /* THPageDefinition.m */; };
+		A72889F22525DBBC002413A4 /* THPageAllocator.m in Sources */ = {isa = PBXBuildFile; fileRef = A72889E42525DBBC002413A4 /* THPageAllocator.m */; };
+		A72889F32525DBBC002413A4 /* THVariadicPageAllocator.m in Sources */ = {isa = PBXBuildFile; fileRef = A72889E72525DBBC002413A4 /* THVariadicPageAllocator.m */; };
+		A72889F42525DBBC002413A4 /* THSimplePageAllocator.m in Sources */ = {isa = PBXBuildFile; fileRef = A72889E92525DBBC002413A4 /* THSimplePageAllocator.m */; };
+		A72889F52525DBBC002413A4 /* THPageVariadicContext_arm64.m in Sources */ = {isa = PBXBuildFile; fileRef = A72889EB2525DBBC002413A4 /* THPageVariadicContext_arm64.m */; };
+		A72889F62525DBBC002413A4 /* THPage_arm64.s in Sources */ = {isa = PBXBuildFile; fileRef = A72889EC2525DBBC002413A4 /* THPage_arm64.s */; };
+		A72889F72525DBBC002413A4 /* THPageVar_arm64.s in Sources */ = {isa = PBXBuildFile; fileRef = A72889EF2525DBBC002413A4 /* THPageVar_arm64.s */; };
+		A7288A062525DF6F002413A4 /* HPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = A7288A052525DF6F002413A4 /* HPerson.m */; };
 		A7307C752517512C001889FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A7307C742517512C001889FD /* AppDelegate.m */; };
 		A7307C782517512C001889FD /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A7307C772517512C001889FD /* SceneDelegate.m */; };
 		A7307C7B2517512C001889FD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7307C7A2517512C001889FD /* ViewController.m */; };
@@ -22,7 +31,6 @@
 		A7307CBF2518F46E001889FD /* BigStruct.c in Sources */ = {isa = PBXBuildFile; fileRef = A7307CBE2518F46E001889FD /* BigStruct.c */; };
 		A7307CC8251972FA001889FD /* ArgsParamter.c in Sources */ = {isa = PBXBuildFile; fileRef = A7307CC7251972FA001889FD /* ArgsParamter.c */; };
 		A7307CD6251A4F08001889FD /* ArgsParamterOc.m in Sources */ = {isa = PBXBuildFile; fileRef = A7307CD5251A4F08001889FD /* ArgsParamterOc.m */; };
-		A7307CEF251BA4B7001889FD /* TestAss.s in Sources */ = {isa = PBXBuildFile; fileRef = A7307CEE251BA4B7001889FD /* TestAss.s */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +51,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A72889DE2525DBBC002413A4 /* THPageDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THPageDefinition.h; sourceTree = "<group>"; };
+		A72889DF2525DBBC002413A4 /* THInterceptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THInterceptor.h; sourceTree = "<group>"; };
+		A72889E02525DBBC002413A4 /* THInterceptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THInterceptor.m; sourceTree = "<group>"; };
+		A72889E12525DBBC002413A4 /* THPageDefinition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THPageDefinition.m; sourceTree = "<group>"; };
+		A72889E32525DBBC002413A4 /* THDynamicAllocatorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THDynamicAllocatorProtocol.h; sourceTree = "<group>"; };
+		A72889E42525DBBC002413A4 /* THPageAllocator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THPageAllocator.m; sourceTree = "<group>"; };
+		A72889E52525DBBC002413A4 /* THVariadicPageAllocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THVariadicPageAllocator.h; sourceTree = "<group>"; };
+		A72889E62525DBBC002413A4 /* THSimplePageAllocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THSimplePageAllocator.h; sourceTree = "<group>"; };
+		A72889E72525DBBC002413A4 /* THVariadicPageAllocator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THVariadicPageAllocator.m; sourceTree = "<group>"; };
+		A72889E82525DBBC002413A4 /* THPageAllocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THPageAllocator.h; sourceTree = "<group>"; };
+		A72889E92525DBBC002413A4 /* THSimplePageAllocator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THSimplePageAllocator.m; sourceTree = "<group>"; };
+		A72889EB2525DBBC002413A4 /* THPageVariadicContext_arm64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THPageVariadicContext_arm64.m; sourceTree = "<group>"; };
+		A72889EC2525DBBC002413A4 /* THPage_arm64.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = THPage_arm64.s; sourceTree = "<group>"; };
+		A72889ED2525DBBC002413A4 /* THPageVariadicContext_arm64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THPageVariadicContext_arm64.h; sourceTree = "<group>"; };
+		A72889EE2525DBBC002413A4 /* THPageDefinition_arm64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THPageDefinition_arm64.h; sourceTree = "<group>"; };
+		A72889EF2525DBBC002413A4 /* THPageVar_arm64.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = THPageVar_arm64.s; sourceTree = "<group>"; };
+		A7288A042525DF6F002413A4 /* HPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPerson.h; sourceTree = "<group>"; };
+		A7288A052525DF6F002413A4 /* HPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPerson.m; sourceTree = "<group>"; };
 		A7307C702517512C001889FD /* ArmTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArmTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7307C732517512C001889FD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A7307C742517512C001889FD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -102,9 +128,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A72889DD2525DBBC002413A4 /* TrampolineHook */ = {
+			isa = PBXGroup;
+			children = (
+				A72889DE2525DBBC002413A4 /* THPageDefinition.h */,
+				A72889DF2525DBBC002413A4 /* THInterceptor.h */,
+				A72889E02525DBBC002413A4 /* THInterceptor.m */,
+				A72889E12525DBBC002413A4 /* THPageDefinition.m */,
+				A72889E22525DBBC002413A4 /* PageAllocator */,
+				A72889EA2525DBBC002413A4 /* arm64 */,
+			);
+			path = TrampolineHook;
+			sourceTree = "<group>";
+		};
+		A72889E22525DBBC002413A4 /* PageAllocator */ = {
+			isa = PBXGroup;
+			children = (
+				A72889E32525DBBC002413A4 /* THDynamicAllocatorProtocol.h */,
+				A72889E42525DBBC002413A4 /* THPageAllocator.m */,
+				A72889E52525DBBC002413A4 /* THVariadicPageAllocator.h */,
+				A72889E62525DBBC002413A4 /* THSimplePageAllocator.h */,
+				A72889E72525DBBC002413A4 /* THVariadicPageAllocator.m */,
+				A72889E82525DBBC002413A4 /* THPageAllocator.h */,
+				A72889E92525DBBC002413A4 /* THSimplePageAllocator.m */,
+			);
+			path = PageAllocator;
+			sourceTree = "<group>";
+		};
+		A72889EA2525DBBC002413A4 /* arm64 */ = {
+			isa = PBXGroup;
+			children = (
+				A72889EB2525DBBC002413A4 /* THPageVariadicContext_arm64.m */,
+				A72889EC2525DBBC002413A4 /* THPage_arm64.s */,
+				A72889ED2525DBBC002413A4 /* THPageVariadicContext_arm64.h */,
+				A72889EE2525DBBC002413A4 /* THPageDefinition_arm64.h */,
+				A72889EF2525DBBC002413A4 /* THPageVar_arm64.s */,
+			);
+			path = arm64;
+			sourceTree = "<group>";
+		};
+		A72889FB2525DF34002413A4 /* hookTest */ = {
+			isa = PBXGroup;
+			children = (
+				A7288A042525DF6F002413A4 /* HPerson.h */,
+				A7288A052525DF6F002413A4 /* HPerson.m */,
+			);
+			path = hookTest;
+			sourceTree = "<group>";
+		};
 		A7307C672517512C001889FD = {
 			isa = PBXGroup;
 			children = (
+				A72889DD2525DBBC002413A4 /* TrampolineHook */,
 				A7307C722517512C001889FD /* ArmTest */,
 				A7307C8E2517512E001889FD /* ArmTestTests */,
 				A7307C992517512E001889FD /* ArmTestUITests */,
@@ -126,6 +201,7 @@
 		A7307C722517512C001889FD /* ArmTest */ = {
 			isa = PBXGroup;
 			children = (
+				A72889FB2525DF34002413A4 /* hookTest */,
 				A7307CBD2518F46E001889FD /* BigStruct.h */,
 				A7307CBE2518F46E001889FD /* BigStruct.c */,
 				A7307C732517512C001889FD /* AppDelegate.h */,
@@ -311,15 +387,23 @@
 			files = (
 				A7307CB92518EF36001889FD /* addFour.c in Sources */,
 				A7307C7B2517512C001889FD /* ViewController.m in Sources */,
+				A72889F52525DBBC002413A4 /* THPageVariadicContext_arm64.m in Sources */,
 				A7307C752517512C001889FD /* AppDelegate.m in Sources */,
 				A7307CBF2518F46E001889FD /* BigStruct.c in Sources */,
 				A7307CB325175393001889FD /* addThree.c in Sources */,
+				A7288A062525DF6F002413A4 /* HPerson.m in Sources */,
 				A7307C862517512D001889FD /* main.m in Sources */,
-				A7307CEF251BA4B7001889FD /* TestAss.s in Sources */,
 				A7307CD6251A4F08001889FD /* ArgsParamterOc.m in Sources */,
+				A72889F12525DBBC002413A4 /* THPageDefinition.m in Sources */,
+				A72889F42525DBBC002413A4 /* THSimplePageAllocator.m in Sources */,
 				A7307CAD2517537F001889FD /* addTow.c in Sources */,
+				A72889F22525DBBC002413A4 /* THPageAllocator.m in Sources */,
 				A7307CC8251972FA001889FD /* ArgsParamter.c in Sources */,
+				A72889F02525DBBC002413A4 /* THInterceptor.m in Sources */,
 				A7307C782517512C001889FD /* SceneDelegate.m in Sources */,
+				A72889F32525DBBC002413A4 /* THVariadicPageAllocator.m in Sources */,
+				A72889F62525DBBC002413A4 /* THPage_arm64.s in Sources */,
+				A72889F72525DBBC002413A4 /* THPageVar_arm64.s in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,7 +577,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YKBWNE92X7;
-				HEADER_SEARCH_PATHS = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1";
 				INFOPLIST_FILE = ArmTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -512,7 +595,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YKBWNE92X7;
-				HEADER_SEARCH_PATHS = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1";
 				INFOPLIST_FILE = ArmTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
