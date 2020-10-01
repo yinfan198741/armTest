@@ -84,8 +84,8 @@ extern int TestAss(void);
 //	long tow = addTow(a, b);
 //	NSLog(@"tow = %ld",tow);
 
-	int ret = TestAss();
-	NSLog(@"ret = %d",ret);
+//	int ret = TestAss();
+//	NSLog(@"ret = %d",ret);
 }
 
 - (void)onclickTow
