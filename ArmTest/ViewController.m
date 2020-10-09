@@ -16,6 +16,20 @@
 #import "THInterceptor.h"
 #import <objc/runtime.h>
 
+
+
+@interface TestObject : NSObject
+@end
+
+@implementation TestObject
+
+- (void)method
+{
+	NSLog(@"123 cmd = %s",_cmd);
+}
+
+@end
+
 @interface ViewController ()
 
 @end
@@ -36,48 +50,60 @@ extern int TestAss(void);
 	[b1 addTarget:self action:@selector(onclickOne) forControlEvents:UIControlEventTouchUpInside];
 	[self.view addSubview:b1];
 	
-	UIButton* b2 = [[UIButton alloc] initWithFrame:CGRectMake(10, 100, 100, 100)];
+	UIButton* b2 = [[UIButton alloc] initWithFrame:CGRectMake(10, 100, 50, 50)];
 	b2.backgroundColor = [UIColor redColor];
 	[b2 setTitle:@"tow" forState:UIControlStateNormal];
 	[b2 addTarget:self action:@selector(onclickTow) forControlEvents:UIControlEventTouchUpInside];
 	[self.view addSubview:b2];
 	
 	
-	UIButton* b3 = [[UIButton alloc] initWithFrame:CGRectMake(10, 300, 100, 100)];
+	UIButton* b3 = [[UIButton alloc] initWithFrame:CGRectMake(10, 300, 50, 50)];
 	b3.backgroundColor = [UIColor redColor];
 	[b3 setTitle:@"three" forState:UIControlStateNormal];
 	[b3 addTarget:self action:@selector(onclickThree) forControlEvents:UIControlEventTouchUpInside];
 	[self.view addSubview:b3];
 	
 	
-	UIButton* b4 = [[UIButton alloc] initWithFrame:CGRectMake(10, 500, 100, 100)];
+	UIButton* b4 = [[UIButton alloc] initWithFrame:CGRectMake(10, 200, 50, 50)];
 	b4.backgroundColor = [UIColor redColor];
 	[b4 setTitle:@"Four" forState:UIControlStateNormal];
 	[b4 addTarget:self action:@selector(onclickFour) forControlEvents:UIControlEventTouchUpInside];
 	[self.view addSubview:b4];
 	
 	
-	UIButton* b5 = [[UIButton alloc] initWithFrame:CGRectMake(200, 100, 100, 100)];
+	UIButton* b5 = [[UIButton alloc] initWithFrame:CGRectMake(200, 100, 50, 50)];
 	b5.backgroundColor = [UIColor redColor];
 	[b5 setTitle:@"Five" forState:UIControlStateNormal];
 	[b5 addTarget:self action:@selector(onclickFive) forControlEvents:UIControlEventTouchUpInside];
 	[self.view addSubview:b5];
 	
 	
-	UIButton* b6 = [[UIButton alloc] initWithFrame:CGRectMake(200, 300, 100, 100)];
+	UIButton* b6 = [[UIButton alloc] initWithFrame:CGRectMake(200, 200, 50, 50)];
 	b6.backgroundColor = [UIColor redColor];
 	[b6 setTitle:@"Six" forState:UIControlStateNormal];
 	[b6 addTarget:self action:@selector(onclickSix) forControlEvents:UIControlEventTouchUpInside];
 	[self.view addSubview:b6];
 	
 	
-	UIButton* b7 = [[UIButton alloc] initWithFrame:CGRectMake(200, 500, 100, 100)];
+	UIButton* b7 = [[UIButton alloc] initWithFrame:CGRectMake(200, 300, 50, 50)];
 	b7.backgroundColor = [UIColor redColor];
 	[b7 setTitle:@"Seven" forState:UIControlStateNormal];
 	[b7 addTarget:self action:@selector(onclickSeven) forControlEvents:UIControlEventTouchUpInside];
 	[self.view addSubview:b7];
 	
 	
+	UIButton* b8 = [[UIButton alloc] initWithFrame:CGRectMake(100, 400, 50, 50)];
+	b8.backgroundColor = [UIColor redColor];
+	[b8 setTitle:@"Eight" forState:UIControlStateNormal];
+	[b8 addTarget:self action:@selector(onclickOne1) forControlEvents:UIControlEventTouchUpInside];
+	[self.view addSubview:b8];
+	
+	
+	UIButton* b9 = [[UIButton alloc] initWithFrame:CGRectMake(200, 400, 50, 50)];
+	b9.backgroundColor = [UIColor redColor];
+	[b9 setTitle:@"Nine" forState:UIControlStateNormal];
+	[b9 addTarget:self action:@selector(onclickOne2) forControlEvents:UIControlEventTouchUpInside];
+	[self.view addSubview:b9];
 }
 
 // C Format
@@ -139,7 +165,7 @@ void myInterceptor()
 - (void)onclickTow
 {
 	
-//	HPerson* hp = [[HPerson alloc] init];
+//	HPerson* hp = [[HPerson alloc] init];a
 //	[hp eat];
 	
 	UIView* v = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
@@ -228,6 +254,42 @@ int sum(int argnum, ...)
 }
 
 
+
+- (void)onclickOne1
+{
+//	UIView* v = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+	NSLog(@"v = %@",@"onclickOne");
+//	[_obj method];
+	TestObject* __obj = [[TestObject alloc] init];
+	[__obj method];
+}
+
+
+// 拦截函数
+void wzq_check_variadic(id a, char * methodName, int *v, ...)
+{
+	NSLog(@"haha checked %@ %s", a, methodName);
+}
+
+
+- (void)onclickOne2
+{
+
+	
+	THInterceptor *sharedInterceptor = [[THInterceptor alloc] initWithRedirectionFunction:(IMP)wzq_check_variadic];
+
+	Method m = class_getInstanceMethod([TestObject class], @selector(method));
+	IMP imp = method_getImplementation(m);
+
+	THInterceptorResult *result = [sharedInterceptor interceptFunction:(IMP)imp];
+	if (result.state == THInterceptStateSuccess) {
+		method_setImplementation(m, (IMP)result.replacedAddress);
+		NSLog(@"%p",result.replacedAddress);
+	}
+
+	
+	
+}
 		
 
 @end
