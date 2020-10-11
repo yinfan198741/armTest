@@ -104,6 +104,13 @@ extern int TestAss(void);
 	[b9 setTitle:@"Nine" forState:UIControlStateNormal];
 	[b9 addTarget:self action:@selector(onclickOne2) forControlEvents:UIControlEventTouchUpInside];
 	[self.view addSubview:b9];
+	
+	
+	UIButton* b0 = [[UIButton alloc] initWithFrame:CGRectMake(100, 500, 50, 50)];
+	b0.backgroundColor = [UIColor redColor];
+	[b0 setTitle:@"Ten" forState:UIControlStateNormal];
+	[b0 addTarget:self action:@selector(Ten) forControlEvents:UIControlEventTouchUpInside];
+	[self.view addSubview:b0];
 }
 
 // C Format
@@ -167,17 +174,10 @@ void myInterceptor()
 	
 //	HPerson* hp = [[HPerson alloc] init];a
 //	[hp eat];
-	
-	UIView* v = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
-	NSLog(@"v = %@",v);
-	
-	return;
-//
-//
-//	long a = 0x1111;
-//	long b = 0x2222;
-//	long tow = addTow(a, b);
-//	NSLog(@"tow = %ld",tow);
+	long a = 0x1111;
+	long b = 0x2222;
+	long tow = addTow(a, b);
+	NSLog(@"tow = %ld",tow);
 }
 
 
@@ -290,6 +290,14 @@ void wzq_check_variadic(id a, char * methodName, int *v, ...)
 	
 	
 }
-		
+
+
+- (void)Ten
+{
+	
+	int a = TestAss();
+	NSLog(@"Ten %d",a);
+}
+
 
 @end

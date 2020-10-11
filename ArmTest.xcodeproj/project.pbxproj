@@ -31,6 +31,7 @@
 		A7307CBF2518F46E001889FD /* BigStruct.c in Sources */ = {isa = PBXBuildFile; fileRef = A7307CBE2518F46E001889FD /* BigStruct.c */; };
 		A7307CC8251972FA001889FD /* ArgsParamter.c in Sources */ = {isa = PBXBuildFile; fileRef = A7307CC7251972FA001889FD /* ArgsParamter.c */; };
 		A7307CD6251A4F08001889FD /* ArgsParamterOc.m in Sources */ = {isa = PBXBuildFile; fileRef = A7307CD5251A4F08001889FD /* ArgsParamterOc.m */; };
+		A7F4D16F253099230077D328 /* TestAss.s in Sources */ = {isa = PBXBuildFile; fileRef = A7307CEE251BA4B7001889FD /* TestAss.s */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -385,6 +386,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7F4D16F253099230077D328 /* TestAss.s in Sources */,
 				A7307CB92518EF36001889FD /* addFour.c in Sources */,
 				A7307C7B2517512C001889FD /* ViewController.m in Sources */,
 				A72889F52525DBBC002413A4 /* THPageVariadicContext_arm64.m in Sources */,
