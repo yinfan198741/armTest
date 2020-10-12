@@ -111,6 +111,15 @@ extern int TestAss(void);
 	[b0 setTitle:@"Ten" forState:UIControlStateNormal];
 	[b0 addTarget:self action:@selector(Ten) forControlEvents:UIControlEventTouchUpInside];
 	[self.view addSubview:b0];
+	
+	
+	UIButton* b11 = [[UIButton alloc] initWithFrame:CGRectMake(0, 500, 50, 50)];
+	b11.backgroundColor = [UIColor redColor];
+	[b11 setTitle:@"HKP" forState:UIControlStateNormal];
+	[b11 addTarget:self action:@selector(HKPrint) forControlEvents:UIControlEventTouchUpInside];
+	[self.view addSubview:b11];
+
+	
 }
 
 // C Format
@@ -299,6 +308,12 @@ void wzq_check_variadic(id a, char * methodName, int *v, ...)
 	
 	int a = TestAss();
 	NSLog(@"Ten %d",a);
+}
+
+
+- (void)HKPrint
+{
+	printf("abc\n");
 }
 
 
