@@ -131,6 +131,10 @@ void myInterceptor()
 //	long tow = addTow(a, b);
 //	NSLog(@"tow = %ld",tow);
 
+<<<<<<< HEAD
+//	int ret = TestAss();
+//	NSLog(@"ret = %d",ret);
+=======
 //	myInterceptor();
 	int ret = 0;//TestAss();
 	NSLog(@"ret = %d",ret);
@@ -167,6 +171,7 @@ void myInterceptor()
 		NSLog(@"THInterceptStateSuccess");
 	}
 	
+>>>>>>> 56100569cdeda8eecb2a7ad62460fd90eb5bc51d
 }
 
 - (void)onclickTow
