@@ -15,7 +15,7 @@
 #import "HPerson.h"
 #import "THInterceptor.h"
 #import <objc/runtime.h>
-
+#import "fishhook.h"
 
 
 @interface TestObject : NSObject
@@ -113,12 +113,18 @@ extern int TestAss(void);
 	[self.view addSubview:b0];
 	
 	
-	UIButton* b11 = [[UIButton alloc] initWithFrame:CGRectMake(0, 500, 50, 50)];
+	UIButton* b11 = [[UIButton alloc] initWithFrame:CGRectMake(0, 600, 50, 50)];
 	b11.backgroundColor = [UIColor redColor];
 	[b11 setTitle:@"HKP" forState:UIControlStateNormal];
 	[b11 addTarget:self action:@selector(HKPrint) forControlEvents:UIControlEventTouchUpInside];
 	[self.view addSubview:b11];
 
+	
+	UIButton* b12 = [[UIButton alloc] initWithFrame:CGRectMake(100, 600, 50, 50)];
+	b12.backgroundColor = [UIColor redColor];
+	[b12 setTitle:@"FHKP" forState:UIControlStateNormal];
+	[b12 addTarget:self action:@selector(FHKPrint) forControlEvents:UIControlEventTouchUpInside];
+	[self.view addSubview:b12];
 	
 }
 
@@ -316,5 +322,39 @@ void wzq_check_variadic(id a, char * methodName, int *v, ...)
 	printf("abc\n");
 }
 
+static int(*oldPrintf)(const char *, ...);
+
+int myPrintf(const char * message, ...)
+{
+	char *firstName = "真棒\n";
+	char *result = malloc(strlen(message) + strlen(firstName));
+	strcpy(result, message);
+	strcat(result, firstName);
+	oldPrintf(result);
+	return 1;
+}
+
+- (void)FHKPrint
+{
+	printf("FHKPrint\n");
+//	struct rebinding pp;
+//	pp.name = "printf";
+//	pp.replacement = myPrint;
+//	pp.replaced = (void*)&oldPrintf;
+//
+//	struct rebinding rebindings[1] = {pp};
+//	rebind_symbols(rebindings, 1);
+	
+	
+	struct rebinding rebind;
+	rebind.name = "printf";
+	rebind.replacement = myPrintf; // 将自定义的函数赋值给replacement
+	rebind.replaced = (void *)&oldPrintf; // 使用自定义的函数指针来接收printf函数原有的实现
+
+	struct rebinding rebs[1] = {rebind};
+	rebind_symbols(rebs, 1);
+
+	
+}
 
 @end
