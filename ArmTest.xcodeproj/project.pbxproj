@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -29,7 +29,7 @@
 		A7307CB325175393001889FD /* addThree.c in Sources */ = {isa = PBXBuildFile; fileRef = A7307CB225175393001889FD /* addThree.c */; };
 		A7307CB92518EF36001889FD /* addFour.c in Sources */ = {isa = PBXBuildFile; fileRef = A7307CB82518EF36001889FD /* addFour.c */; };
 		A7307CBF2518F46E001889FD /* BigStruct.c in Sources */ = {isa = PBXBuildFile; fileRef = A7307CBE2518F46E001889FD /* BigStruct.c */; };
-		A7307CC8251972FA001889FD /* ArgsParamter.c in Sources */ = {isa = PBXBuildFile; fileRef = A7307CC7251972FA001889FD /* ArgsParamter.c */; };
+		A7307CC8251972FA001889FD /* ArgsParamter.m in Sources */ = {isa = PBXBuildFile; fileRef = A7307CC7251972FA001889FD /* ArgsParamter.m */; };
 		A7307CD6251A4F08001889FD /* ArgsParamterOc.m in Sources */ = {isa = PBXBuildFile; fileRef = A7307CD5251A4F08001889FD /* ArgsParamterOc.m */; };
 		A7F4D16F253099230077D328 /* TestAss.s in Sources */ = {isa = PBXBuildFile; fileRef = A7307CEE251BA4B7001889FD /* TestAss.s */; };
 		C263FAF34F96463630F13630 /* Pods_ArmTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A1D16F43CF322725F659459 /* Pods_ArmTest.framework */; };
@@ -100,7 +100,7 @@
 		A7307CBD2518F46E001889FD /* BigStruct.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BigStruct.h; sourceTree = "<group>"; };
 		A7307CBE2518F46E001889FD /* BigStruct.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = BigStruct.c; sourceTree = "<group>"; };
 		A7307CC6251972FA001889FD /* ArgsParamter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArgsParamter.h; sourceTree = "<group>"; };
-		A7307CC7251972FA001889FD /* ArgsParamter.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ArgsParamter.c; sourceTree = "<group>"; };
+		A7307CC7251972FA001889FD /* ArgsParamter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArgsParamter.m; sourceTree = "<group>"; };
 		A7307CD4251A4F08001889FD /* ArgsParamterOc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArgsParamterOc.h; sourceTree = "<group>"; };
 		A7307CD5251A4F08001889FD /* ArgsParamterOc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArgsParamterOc.m; sourceTree = "<group>"; };
 		A7307CDB251B9923001889FD /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
@@ -140,7 +140,6 @@
 				0D6FC9643499C97103EDAD8E /* Pods-ArmTest.debug.xcconfig */,
 				B0C6C35904032EBB1033C595 /* Pods-ArmTest.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -240,7 +239,7 @@
 				A7307CB72518EF36001889FD /* addFour.h */,
 				A7307CB82518EF36001889FD /* addFour.c */,
 				A7307CC6251972FA001889FD /* ArgsParamter.h */,
-				A7307CC7251972FA001889FD /* ArgsParamter.c */,
+				A7307CC7251972FA001889FD /* ArgsParamter.m */,
 				A7307CD4251A4F08001889FD /* ArgsParamterOc.h */,
 				A7307CD5251A4F08001889FD /* ArgsParamterOc.m */,
 			);
@@ -461,7 +460,7 @@
 				A72889F42525DBBC002413A4 /* THSimplePageAllocator.m in Sources */,
 				A7307CAD2517537F001889FD /* addTow.c in Sources */,
 				A72889F22525DBBC002413A4 /* THPageAllocator.m in Sources */,
-				A7307CC8251972FA001889FD /* ArgsParamter.c in Sources */,
+				A7307CC8251972FA001889FD /* ArgsParamter.m in Sources */,
 				A72889F02525DBBC002413A4 /* THInterceptor.m in Sources */,
 				A7307C782517512C001889FD /* SceneDelegate.m in Sources */,
 				A72889F32525DBBC002413A4 /* THVariadicPageAllocator.m in Sources */,

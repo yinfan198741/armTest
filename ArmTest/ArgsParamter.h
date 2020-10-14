@@ -9,9 +9,14 @@
 #define ArgsParamter_h
 
 #include <stdio.h>
+#include <stdarg.h>
+#include <stdio.h>
 
 
-int argsTest(int arg, ...);
+int sum(int argnum, ...);
 
+double average(int count, ...);
+
+void test(const char* format, ...);
 
 #endif /* ArgsParamter_h */
