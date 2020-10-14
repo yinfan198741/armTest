@@ -150,7 +150,7 @@ void myInterceptor()
 //	int ret = TestAss();
 //	NSLog(@"ret = %d",ret);
 //	myInterceptor();
-	int ret = 0;//TestAss();
+	int ret = TestAss();
 	NSLog(@"ret = %d",ret);
 	
 	

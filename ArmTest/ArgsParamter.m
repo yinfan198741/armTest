@@ -11,6 +11,12 @@
 #include <string.h>
 
 
+int assCall(int a,int b)
+{
+	printf("%d %d",a,b);
+	return a + b ;
+}
+
 
 int sum(int argnum, ...)
 {

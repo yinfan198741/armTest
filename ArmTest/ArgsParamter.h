@@ -13,6 +13,8 @@
 #include <stdio.h>
 
 
+int assCall(int a,int b);
+
 int sum(int argnum, ...);
 
 double average(int count, ...);

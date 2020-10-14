@@ -36,10 +36,11 @@ mov x1 , #0x2;
 add x0, x0, x1;
 mov x3, 0;
 mov x4, 0;
-b _comp;
+//b _comp;
 str lr, [sp ,#-4];
 bl _addTow
 ldr lr, [sp ,#-4]
+bl _assCall
 ret
 
 
