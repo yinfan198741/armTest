@@ -32,6 +32,7 @@
 		A7307CC8251972FA001889FD /* ArgsParamter.m in Sources */ = {isa = PBXBuildFile; fileRef = A7307CC7251972FA001889FD /* ArgsParamter.m */; };
 		A7307CD6251A4F08001889FD /* ArgsParamterOc.m in Sources */ = {isa = PBXBuildFile; fileRef = A7307CD5251A4F08001889FD /* ArgsParamterOc.m */; };
 		A7F4D16F253099230077D328 /* TestAss.s in Sources */ = {isa = PBXBuildFile; fileRef = A7307CEE251BA4B7001889FD /* TestAss.s */; };
+		A7F4D190253753350077D328 /* objc_msgSend_hook.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F4D18F253753350077D328 /* objc_msgSend_hook.m */; };
 		C263FAF34F96463630F13630 /* Pods_ArmTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A1D16F43CF322725F659459 /* Pods_ArmTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -105,6 +106,8 @@
 		A7307CD5251A4F08001889FD /* ArgsParamterOc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArgsParamterOc.m; sourceTree = "<group>"; };
 		A7307CDB251B9923001889FD /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
 		A7307CEE251BA4B7001889FD /* TestAss.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = TestAss.s; sourceTree = "<group>"; };
+		A7F4D18E253753350077D328 /* objc_msgSend_hook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = objc_msgSend_hook.h; sourceTree = "<group>"; };
+		A7F4D18F253753350077D328 /* objc_msgSend_hook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = objc_msgSend_hook.m; sourceTree = "<group>"; };
 		B0C6C35904032EBB1033C595 /* Pods-ArmTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArmTest.release.xcconfig"; path = "Target Support Files/Pods-ArmTest/Pods-ArmTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -242,6 +245,8 @@
 				A7307CC7251972FA001889FD /* ArgsParamter.m */,
 				A7307CD4251A4F08001889FD /* ArgsParamterOc.h */,
 				A7307CD5251A4F08001889FD /* ArgsParamterOc.m */,
+				A7F4D18E253753350077D328 /* objc_msgSend_hook.h */,
+				A7F4D18F253753350077D328 /* objc_msgSend_hook.m */,
 			);
 			path = ArmTest;
 			sourceTree = "<group>";
@@ -452,6 +457,7 @@
 				A72889F52525DBBC002413A4 /* THPageVariadicContext_arm64.m in Sources */,
 				A7307C752517512C001889FD /* AppDelegate.m in Sources */,
 				A7307CBF2518F46E001889FD /* BigStruct.c in Sources */,
+				A7F4D190253753350077D328 /* objc_msgSend_hook.m in Sources */,
 				A7307CB325175393001889FD /* addThree.c in Sources */,
 				A7288A062525DF6F002413A4 /* HPerson.m in Sources */,
 				A7307C862517512D001889FD /* main.m in Sources */,
