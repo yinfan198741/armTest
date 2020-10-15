@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (5.2.2)
+  - fishhook (0.2)
+
+DEPENDENCIES:
+  - Alamofire
+  - fishhook
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - fishhook
+
+SPEC CHECKSUMS:
+  Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
+  fishhook: ea19933abfe8f2f52c55fd8b6e2718467d3ebc89
+
+PODFILE CHECKSUM: 77e1a86e1ed97733c9f14c2f7f839ba96e2f26ff
+
+COCOAPODS: 1.10.0.rc.1
