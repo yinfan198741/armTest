@@ -127,6 +127,20 @@ extern int TestAss(void);
 	[b12 addTarget:self action:@selector(FHKPrint) forControlEvents:UIControlEventTouchUpInside];
 	[self.view addSubview:b12];
 	
+	
+	UIButton* b13 = [[UIButton alloc] initWithFrame:CGRectMake(160, 600, 50, 50)];
+	b13.backgroundColor = [UIColor redColor];
+	[b13 setTitle:@"objMsH" forState:UIControlStateNormal];
+	[b13 addTarget:self action:@selector(objMsH) forControlEvents:UIControlEventTouchUpInside];
+	[self.view addSubview:b13];
+	
+	
+	UIButton* b14 = [[UIButton alloc] initWithFrame:CGRectMake(230, 600, 50, 50)];
+	b14.backgroundColor = [UIColor redColor];
+	[b14 setTitle:@"MSend" forState:UIControlStateNormal];
+	[b14 addTarget:self action:@selector(MSend) forControlEvents:UIControlEventTouchUpInside];
+	[self.view addSubview:b14];
+	
 }
 
 // C Format
@@ -345,6 +359,23 @@ int myPrintf(const char * message, ...)
 	rebind_symbols(rebs, 1);
 
 	
+}
+
+
+extern void hookStart();
+
+- (void)objMsH
+{
+	NSLog(@"objMsH");
+	hookStart();
+}
+
+
+- (void)MSend
+{
+	HPerson* p = [[HPerson alloc] init];
+	[p sleep];
+	NSLog(@"MSend");
 }
 
 @end

@@ -27,4 +27,10 @@
 	
 }
 
+
+- (void)sleep
+{
+	NSLog(@"person sleep");
+}
+
 @end
